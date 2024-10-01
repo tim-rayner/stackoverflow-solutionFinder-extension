@@ -1,0 +1,6 @@
+{
+  "watch": ["src", "manifest.json"],
+  "ext": "ts,json",
+  "exec": "npx webpack --mode development",
+  "ignore": ["dist/*"]
+}
