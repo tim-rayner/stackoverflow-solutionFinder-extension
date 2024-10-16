@@ -7,7 +7,7 @@ This Chrome extension helps users quickly find the most upvoted solution on Stac
 - Lightweight and fast, using DOM manipulation.
 
 ## Installation
-1. Clone the repository: `git clone https://github.com/your-username/stackoverflow-solution-finder-extension.git`.
+1. Clone the repository: `git clone https://github.com/tim-rayner/stackoverflow-solutionFinder-extension.git`.
 2. Navigate to `chrome://extensions/` in your browser.
 3. Enable **Developer Mode**.
 4. Click **Load unpacked** and select the extension folder.
