@@ -1,9 +1,11 @@
 const path = require("path");
+const CopyPlugin = require("copy-webpack-plugin");
 
 module.exports = {
   mode: "development",
   entry: {
     contentScript: "./src/contentScript.ts", // Entry point for TypeScript code
+    background: "./src/background.ts",
   },
   output: {
     filename: "[name].js", // Output JavaScript files with the same name as the entry
@@ -22,4 +24,12 @@ module.exports = {
     ],
   },
   devtool: "source-map", // Enable sourcemaps for easier debugging
+  plugins: [
+    new CopyPlugin({
+      patterns: [
+        { from: "manifest.json", to: "manifest.json" },
+        { from: "icons", to: "icons" },
+      ],
+    }),
+  ],
 };
